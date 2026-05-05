@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A portfolio-ready JavaScript weather app demonstrating callbacks, asynchronous API requests, DOM updates, and error handling." />
+  <title>Weather Callback App</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="#">Weather Callback App</a>
+      <span class="tech-stack">HTML · CSS · JavaScript</span>
+    </nav>
+
+    <section class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Asynchronous JavaScript Project</p>
+        <h1>Explore current weather with callbacks and API requests.</h1>
+        <p class="hero-text">
+          A clean front-end application that retrieves weather information, manages loading and error states, and renders results dynamically in the browser.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#weather-app">Try the app</a>
+          <a class="secondary-link" href="#project-details">View skills demonstrated</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <img src="assets/weather-hero.svg" alt="" />
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="weather-app" class="app-shell">
+      <article class="panel form-panel">
+        <div class="section-label">Input</div>
+        <h2>Get current weather</h2>
+        <p class="muted">
+          Use demo mode for portfolio preview, or paste your own OpenWeather API key for live API data.
+        </p>
+
+        <form id="weatherForm" class="weather-form">
+          <label for="city">City</label>
+          <input
+            id="city"
+            name="city"
+            type="text"
+            list="citySuggestions"
+            placeholder="Example: London, Boston, Mexico City"
+            value="Boston"
+            autocomplete="off"
+          />
+          <datalist id="citySuggestions">
+            <option value="Boston"></option>
+            <option value="Mexico City"></option>
+            <option value="London"></option>
+            <option value="Madrid"></option>
+            <option value="New York"></option>
+            <option value="Tokyo"></option>
+            <option value="Monterrey"></option>
+            <option value="Toronto"></option>
+          </datalist>
+
+          <label for="apiKey">OpenWeather API Key</label>
+          <input
+            id="apiKey"
+            name="apiKey"
+            type="password"
+            placeholder="Optional: paste your API key"
+            autocomplete="off"
+          />
+          <p class="helper-text">
+            The key is stored only in your browser's localStorage. It is not included in the repository.
+          </p>
+
+          <div class="toggle-row">
+            <input id="demoMode" type="checkbox" checked />
+            <label for="demoMode">Use demo mode</label>
+          </div>
+
+          <button id="button" class="primary-button" type="submit">Get Weather</button>
+        </form>
+      </article>
+
+      <article class="panel result-panel">
+        <div class="result-header">
+          <div>
+            <div class="section-label">Weather Result</div>
+            <h2 id="locationName">Ready to search</h2>
+          </div>
+          <span id="statusBadge" class="status-badge idle">Idle</span>
+        </div>
+
+        <div id="weatherContainer" class="weather-summary">
+          Enter a city and click “Get Weather” to display current conditions.
+        </div>
+
+        <div class="metrics-grid" aria-live="polite">
+          <div class="metric-card">
+            <span>Temperature</span>
+            <strong id="temperature">—</strong>
+          </div>
+          <div class="metric-card">
+            <span>Feels like</span>
+            <strong id="feelsLike">—</strong>
+          </div>
+          <div class="metric-card">
+            <span>Humidity</span>
+            <strong id="humidity">—</strong>
+          </div>
+          <div class="metric-card">
+            <span>Wind</span>
+            <strong id="wind">—</strong>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="project-details" class="details-section">
+      <div class="details-copy">
+        <div class="section-label">Project Value</div>
+        <h2>What this project demonstrates</h2>
+        <p class="muted">
+          This project turns a basic callback exercise into a portfolio-ready application with stronger UX, safer API-key handling, and clearer code organization.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Callback functions</h3>
+          <p>Passes a display function into the data-fetching workflow and runs it once weather data is available.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Fetch API</h3>
+          <p>Uses asynchronous requests to retrieve current weather data from OpenWeather when API mode is enabled.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Error handling</h3>
+          <p>Handles missing input, failed requests, invalid cities, and missing API keys with user-friendly messages.</p>
+        </div>
+        <div class="skill-card">
+          <h3>DOM rendering</h3>
+          <p>Updates the interface dynamically with temperature, humidity, wind speed, and status indicators.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Built with HTML, CSS, and JavaScript. Weather data by OpenWeather when API mode is used.
+  </footer>
+
+  <script src="js/fetchWeatherData.js"></script>
+</body>
+</html>

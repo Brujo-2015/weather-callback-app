@@ -1,0 +1,51 @@
+<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Weather dashboard illustration</title>
+  <desc id="desc">A modern weather card with sun, cloud, rain drops, and temperature indicators.</desc>
+  <defs>
+    <linearGradient id="card" x1="120" y1="88" x2="610" y2="474" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EAF6FF"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="200" y1="200" x2="570" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DBF4FF"/>
+      <stop offset="1" stop-color="#F5FDFF"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="116" y1="82" x2="600" y2="484" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="shadow" x="67" y="62" width="586" height="454" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#082F49" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <circle cx="590" cy="86" r="50" fill="#FBBF24" opacity="0.95"/>
+  <circle cx="106" cy="444" r="36" fill="#7DD3FC" opacity="0.24"/>
+  <circle cx="632" cy="430" r="24" fill="#BFDBFE" opacity="0.42"/>
+  <path d="M74 162C74 112.294 114.294 72 164 72H542C591.706 72 632 112.294 632 162V398C632 447.706 591.706 488 542 488H164C114.294 488 74 447.706 74 398V162Z" fill="url(#card)" filter="url(#shadow)"/>
+  <path d="M116 168C116 142.595 136.595 122 162 122H544C569.405 122 590 142.595 590 168V216H116V168Z" fill="#EFF6FF"/>
+  <circle cx="158" cy="170" r="14" fill="#F87171"/>
+  <circle cx="198" cy="170" r="14" fill="#FBBF24"/>
+  <circle cx="238" cy="170" r="14" fill="#34D399"/>
+
+  <rect x="116" y="246" width="474" height="194" rx="34" fill="url(#screen)"/>
+  <rect x="156" y="278" width="172" height="16" rx="8" fill="#BFDBFE"/>
+  <rect x="156" y="316" width="228" height="18" rx="9" fill="#DBEAFE"/>
+  <rect x="156" y="358" width="150" height="16" rx="8" fill="#BFDBFE"/>
+  <rect x="156" y="392" width="264" height="16" rx="8" fill="#DBEAFE"/>
+
+  <path d="M463 317C463 260.115 509.115 214 566 214C622.885 214 669 260.115 669 317C669 373.885 622.885 420 566 420C509.115 420 463 373.885 463 317Z" fill="#FBBF24"/>
+  <path d="M476 346C476 299.056 514.056 261 561 261C607.944 261 646 299.056 646 346C646 392.944 607.944 431 561 431H476V346Z" fill="#BAE6FD"/>
+  <path d="M424 356C424 313.474 458.474 279 501 279C543.526 279 578 313.474 578 356C578 398.526 543.526 433 501 433H424V356Z" fill="#DBF4FF"/>
+  <path d="M540 356C540 318.997 570.997 288 608 288C645.003 288 676 318.997 676 356C676 393.003 645.003 424 608 424H540V356Z" fill="#D7F3FF"/>
+
+  <path d="M448 464C448 464 430 489 430 504C430 519 442 530 456 530C470 530 482 519 482 504C482 489 448 464 448 464Z" fill="#38BDF8"/>
+  <path d="M536 464C536 464 518 489 518 504C518 519 530 530 544 530C558 530 570 519 570 504C570 489 536 464 536 464Z" fill="#0EA5E9"/>
+  <path d="M624 464C624 464 606 489 606 504C606 519 618 530 632 530C646 530 658 519 658 504C658 489 624 464 624 464Z" fill="#38BDF8"/>
+
+  <circle cx="250" cy="322" r="44" fill="url(#blue)"/>
+  <path d="M250 297V325L270 345" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="123" y="92" width="132" height="68" rx="34" fill="#E0F2FE" opacity="0.72"/>
+  <rect x="382" y="98" width="96" height="68" rx="34" fill="#DBEAFE" opacity="0.76"/>
+</svg>
