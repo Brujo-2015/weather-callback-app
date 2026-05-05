@@ -8,7 +8,7 @@ A front-end application that retrieves real-time weather data using asynchronous
 
 ## Live Demo
 
-https://brujo-2015.github.io/weather-callback-app/
+https://brujo-2015.github.io/weather-data-app/
 
 ---
 
